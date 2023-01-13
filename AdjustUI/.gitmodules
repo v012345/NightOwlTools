@@ -1,0 +1,9 @@
+[submodule "nlohmann_json"]
+	path = nlohmann_json
+	url = git@github.com:nlohmann/json.git
+[submodule "OpenXLSX"]
+	path = OpenXLSX
+	url = git@github.com:troldal/OpenXLSX.git
+[submodule "audit_tables_v2/scripts"]
+	path = audit_tables_v2/scripts
+	url = git@github.com:v012345/audit_workers.git

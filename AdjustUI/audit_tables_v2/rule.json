@@ -1,0 +1,5804 @@
+{
+    "has_one_conditions": [
+        {
+            "table": "buff_base",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "buff_rule",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "rule_id",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "item_fashion_suit",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "item_fashion_role_type1",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "suit_parts",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_fashion_role_type2",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "suit_parts",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_fashion_role_type3",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "suit_parts",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_fashion_role_type4",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "suit_parts",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "other_shop_shelf",
+            "exclude": [
+                2
+            ],
+            "has": [
+                {
+                    "table": "other_shop_goods",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "goods_id",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "entity_role",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "buff_base",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "buff_ids",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "entity_ai",
+            "exclude": [
+                112980,
+                112990,
+                113000,
+                114750,
+                114760,
+                114770,
+                20000
+            ],
+            "has": [
+                {
+                    "table": "skill_attack",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "skill_ids",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "action_attack",
+            "exclude": [
+                902920,
+                501750
+            ],
+            "has": [
+                {
+                    "table": "entity_effect",
+                    "between": [
+                        0,
+                        1999999
+                    ],
+                    "by": "effect_ids",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "entity_effect2",
+                    "between": [
+                        2000000,
+                        2147483647
+                    ],
+                    "by": "effect_ids",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "buff_base",
+                    "between": [
+                        1,
+                        2147483647
+                    ],
+                    "by": "buff_ids",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "res_sound",
+                    "between": [
+                        1,
+                        2147483647
+                    ],
+                    "by": "sound_id",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "entity_effect2",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "entity_effect2",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "next_effect_id",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "item_money",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "config_get_type",
+                    "between": [
+                        1,
+                        2147483647
+                    ],
+                    "by": "access_type_id",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_config_type2",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "config_get_type",
+                    "between": [
+                        0,
+                        2147483647
+                    ],
+                    "by": "access_type_id",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "item_gift",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "item_equip_common",
+                    "between": [
+                        2000,
+                        5999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_fashion_role_type1",
+                    "between": [
+                        6000,
+                        7999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_fashion_role_type2",
+                    "between": [
+                        6000,
+                        7999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_fashion_role_type4",
+                    "between": [
+                        6000,
+                        7999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_fashion_common",
+                    "between": [
+                        1,
+                        10
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_crest",
+                    "between": [
+                        8000,
+                        8999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_crest",
+                    "between": [
+                        9000,
+                        9999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_material",
+                    "between": [
+                        10000,
+                        13999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_gift",
+                    "between": [
+                        14000,
+                        15999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_buff",
+                    "between": [
+                        16000,
+                        16999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_spirit",
+                    "between": [
+                        17000,
+                        17999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_money",
+                    "between": [
+                        18000,
+                        18999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_enchantstone",
+                    "between": [
+                        19000,
+                        19999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_make_paper",
+                    "between": [
+                        20000,
+                        29999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_equip_common",
+                    "between": [
+                        40000,
+                        49999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "skill_chip",
+                    "between": [
+                        50000,
+                        59999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_make_paper",
+                    "between": [
+                        60000,
+                        60999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_debris",
+                    "between": [
+                        61000,
+                        80999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_title",
+                    "between": [
+                        81000,
+                        89999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_gem",
+                    "between": [
+                        90000,
+                        99999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_material",
+                    "between": [
+                        100000,
+                        109999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_progress_material",
+                    "between": [
+                        110000,
+                        129999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_redpacket",
+                    "between": [
+                        130000,
+                        139999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_artifact_config_type1",
+                    "between": [
+                        140000,
+                        149999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_artifact_config_type2",
+                    "between": [
+                        140000,
+                        149999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_artifact_config_type4",
+                    "between": [
+                        140000,
+                        149999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_artifact_skin",
+                    "between": [
+                        150000,
+                        159999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_profile_role1",
+                    "between": [
+                        160000,
+                        169999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_profile_role2",
+                    "between": [
+                        160000,
+                        169999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_profile_role4",
+                    "between": [
+                        160000,
+                        169999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_superskill_config_type1",
+                    "between": [
+                        170000,
+                        179999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_superskill_config_type2",
+                    "between": [
+                        170000,
+                        179999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_superskill_config_type4",
+                    "between": [
+                        170000,
+                        179999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_spirit_star_ticket",
+                    "between": [
+                        180000,
+                        189999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_partner",
+                    "between": [
+                        190000,
+                        199999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "other_partner_arms",
+                    "between": [
+                        200000,
+                        209999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_gift_exp",
+                    "between": [
+                        210000,
+                        219999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_partner_fashion",
+                    "between": [
+                        220000,
+                        229999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "other_shop_goods",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "item_gift",
+                    "between": [
+                        14000,
+                        15999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_material",
+                    "between": [
+                        10000,
+                        13999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_spirit",
+                    "between": [
+                        17000,
+                        17999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_money",
+                    "between": [
+                        18000,
+                        18999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_material",
+                    "between": [
+                        100000,
+                        109999
+                    ],
+                    "by": "item_id",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_material",
+                    "between": [
+                        10000,
+                        13999
+                    ],
+                    "by": "pay_type",
+                    "to": "primary_key"
+                },
+                {
+                    "table": "item_material",
+                    "between": [
+                        100000,
+                        109999
+                    ],
+                    "by": "pay_type",
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_star",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "res_spine",
+                    "between": [
+                        1,
+                        2147483647
+                    ],
+                    "by": "spine_ui_id",
+                    "index": 0,
+                    "to": "primary_key"
+                }
+            ]
+        },
+        {
+            "table": "item_suit",
+            "exclude": [],
+            "has": [
+                {
+                    "table": "text_name",
+                    "between": [
+                        1,
+                        2147483647
+                    ],
+                    "by": "name_id",
+                    "to": "primary_key"
+                }
+            ]
+        }
+    ],
+    "column_type_check": [
+        {
+            "table": "action_attack",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "effect_ids",
+                    "type": "array",
+                    "delimiter": "|"
+                },
+                {
+                    "name": "buff_ids",
+                    "type": "array",
+                    "delimiter": "|"
+                },
+                {
+                    "name": "sound_id",
+                    "type": "array",
+                    "delimiter": "|"
+                }
+            ]
+        },
+        {
+            "table": "action_attack_effect",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "action_attack_effect2",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "action_camera",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "action_displacement",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "attribute_change",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "buff_base",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "rule_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "buff_rule",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_activity_find",
+            "columns": [
+                {
+                    "name": "system_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_activity_notice",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_agility_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_auto_bourse",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_banner",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_color",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_common_dialog",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_get_type",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_head",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_lottery",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_operating_activity",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_pvp_ai",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_quality",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_system_times",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "config_team",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "detection_third_party",
+            "columns": [
+                {
+                    "name": "level",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_ai",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "skill_ids",
+                    "type": "array"
+                }
+            ]
+        },
+        {
+            "table": "entity_attribute",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_effect",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_effect2",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "next_effect_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_fight_value",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_goods",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_npc",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_obstacle",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_pet",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_portal",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "entity_role",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "buff_ids",
+                    "type": "array"
+                },
+                {
+                    "name": "res_fashion",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_config_type1",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_config_type2",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "access_type_id",
+                    "type": "array",
+                    "delimiter": "|"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_config_type3",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_config_type4",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_extend",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_level",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_progress",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_skill",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_skin",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_star",
+            "columns": [
+                {
+                    "name": "ID",
+                    "type": "number"
+                },
+                {
+                    "name": "spine_ui_id",
+                    "type": "json"
+                }
+            ]
+        },
+        {
+            "table": "item_artifact_starup",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_base",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_buff",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_competition",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_competition_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_competition_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_crest",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_debris",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_debris_change",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_enchantstone",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_equip_breach",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_equip_common",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_equip_intensify",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_equip_intensify_body",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_equip_intensify_value",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_equip_role_type1",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_equip_role_type2",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_equip_role_type3",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_equip_role_type4",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_fashion_common",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_fashion_role_type1",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_fashion_role_type2",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_fashion_role_type3",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_fashion_role_type4",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_fashion_suit",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "suit_parts",
+                    "type": "array",
+                    "delimiter": "|"
+                }
+            ]
+        },
+        {
+            "table": "item_forge",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_gashapon_probability",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_gashapon_reward",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_gashapon_reward_preview",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_gem",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_gem_level",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_gem_levelcost",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "item_id",
+                    "type": "array",
+                    "delimiter": "|"
+                }
+            ]
+        },
+        {
+            "table": "item_gift_exp",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_make_equip",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_make_equip_suit",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_make_paper",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_material",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_money",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "access_type_id",
+                    "type": "array",
+                    "delimiter": "|"
+                }
+            ]
+        },
+        {
+            "table": "item_partner",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_partner_fashion",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_partner_skill",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_partner_star",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_partner_story",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_profile_role1",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_profile_role2",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_profile_role3",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_profile_role4",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_progress_material",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_redpacket",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_refined",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit_awaken",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit_breakthrough",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit_progress",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit_progress_material",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit_star",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit_star_ticket",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit_upstars",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit_upstars_attribute",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_spirit_value",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_sprite_skill",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_sprite_skill_random",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_suit",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "name_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_superskill_config_type1",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_superskill_config_type2",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_superskill_config_type3",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_superskill_config_type4",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_title",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "item_update_material",
+            "columns": [
+                {
+                    "name": "material_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_artifact_area",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_artifact_limit",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_artifact_limit_time",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_artifact_pond",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_artifact_probability",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_equipment_area",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_equipment_pond",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_equipment_probability",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_fashion_area",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_fashion_pond",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_fashion_probability",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_fashion_reward",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_limit_time_points",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_limit_time_rank",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_spirit_area",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_spirit_pond",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_spirit_probability",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "lottery_spirit_sniper",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_activity_chapter",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_activity_copy",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_camp",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_chapter",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_city",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_copy",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_copy_bestdrop",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_copy_card",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_copy_main",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_copy_main_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_country",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_data",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_province",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_room",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_room2",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_room3",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_stage",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "map_stage_appraise",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "name_first",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "name_man",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "name_woman",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_7days_activity_award",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_7days_activity_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_7days_sign",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_across_server_arena",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_across_server_arena_award",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_across_server_arena_robot",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_across_server_group",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_atlas",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_dimensiontrial_rewards",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_dimension_trial",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_instance_sign",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_linkage_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_menu",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_sign",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_trial",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_trial_config",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_activity_trial_rewards",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_allstar_rac_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_answer",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_arena",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_arena_award",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_arena_robot",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_artifactway",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_artifact_comboskill",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_artifact_skin",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_auction",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_auction_condition",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_auction_pool",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_awake_road",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_backflow_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_backflow_recharge",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_backflow_sign",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_backflow_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_battlepass_config",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_battlepass_level",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_battlepass_system_level",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_bossrush",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_bossrush_award",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_bossrush_buff",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_boss_skills",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_bourse",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_cashcow",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_chat_expression",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_chat_title",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_coin_tree",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_college_award",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_college_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_commonfunction",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_constellation_buff_base",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_constellation_buff_random",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_constellation_floor",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_constellation_reincarnation",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_constellation_stage",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_dailytask",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_dailytask_config",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_daily_activity",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_daily_liveness_reward",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_daily_liveness_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_daily_reward",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_data_collect",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_dimension_copy",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_dimension_drop",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_dimension_reward",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_dimension_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_drop",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_enemyattack",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_enemyattack_random",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_everyday_online_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_exchange",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_exp",
+            "columns": [
+                {
+                    "name": "level",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_expedition",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_formula_config",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_freegifts",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_gashapon",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_gashapon_collect",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_gashapon_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_gemstone_tower",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_get_stronger",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_get_stronger_module",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_get_stronger_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_godchoose_config",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_godchoose_level",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_godchoose_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_growup_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_Infinite",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_Infinite_car",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_Infinite_drop",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_Infinite_fast_drop",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_Infinite_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_Infinite_lv",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_levelreward",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_level_guide",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_level_limit",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_limit",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_limitchallenge_boxlevelup",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_limitchallenge_boxreward",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_limit_exchange",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_limit_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_mail",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_maincitybutton",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_message_push",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_money_tower",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_month_sign",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_nest",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_nest_card",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_openfunction",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_open_server_online_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_open_server_upgrade_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_partner_arms",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_partner_exp",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_powers",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_powers_core",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_pvp_award",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_pvp_config",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_questionnaire",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_ranktitle",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_rapidlychallenge",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_rapidlychallenge_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_resources_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_resource_retrieval",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_resource_stage",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_shop",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_shop_fashionbox",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_shop_goods",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "item_id",
+                    "type": "number"
+                },
+                {
+                    "name": "pay_type",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_shop_main",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_shop_shelf",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                },
+                {
+                    "name": "goods_id",
+                    "type": "array",
+                    "delimiter": "|"
+                }
+            ]
+        },
+        {
+            "table": "other_shop_skill",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_sound_talk",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_spirit_grade",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_spirit_level",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_story",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_story_data",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_story_set",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_strategy",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_strategy_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_superskill",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_superskill_level",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_superskill_star",
+            "columns": [
+                {
+                    "name": "ID",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_superskill_starup",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_superskill_studybuff",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_system_menu",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_system_new_menu",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_tower",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_transfer_data",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_trial",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_trial_rank",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_trial_worldboss",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_vip",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_vip_tip",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_worldboss",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_worldboss_auction",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "other_worldboss_rank",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "push_system_massage",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "pvp_activity_rewards",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "pvp_ladder_score",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "pvp_ladder_top_reward",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "pvp_match_score_plus",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "pvp_score_steak_coefficient",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_accumulative",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_card",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_daily_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_everyday",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_frist_rewards",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_fund",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_main",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_official_account_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_rebate",
+            "columns": [
+                {
+                    "name": "user_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "recharge_return",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "res_fashion",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "res_image",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "res_sound",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "res_spine",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "res_video",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "server_enterkey",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_ai",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_attack",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_attribute_damage",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_change_system",
+            "columns": [
+                {
+                    "name": "skill_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_chip",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_hit",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_hurt",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_leaf",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_recommend",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_rock",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "skill_tree",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "sound_map_spine",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "sound_sendmessage",
+            "columns": [
+                {
+                    "name": "sendmessage_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "sound_spine",
+            "columns": [
+                {
+                    "name": "spine_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "sound_spine_bgm",
+            "columns": [
+                {
+                    "name": "spine_id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "sound_ui",
+            "columns": [
+                {
+                    "name": "view_name",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "specialability_base",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_announcement",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_answer",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_content",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_error",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_fighttips",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_help",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_mail",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_name",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_sound_talk",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_story",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_tutor",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "text_ui",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "tutor_func_priority",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "tutor_process",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "tutor_tips",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_achievement_redpacket",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_activity",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_activity_rank",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_base",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_boss_chapter",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_boss_stage",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_citywar",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_competition",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_competition_city",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_competition_coordinate",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_competition_formula",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_competition_merit",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_competition_show",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_crystal",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_crystal_other",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_goalkeeper",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_goalkeeper_rank",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_positon",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_salary",
+            "columns": [
+                {
+                    "name": "union_lv",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_salary_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_sign",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_sign_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_sign_redpacket",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_skill",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "union_task",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "world_config",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "table": "world_lv_gift",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "table_config": [
+        {
+            "table": "action_attack",
+            "primary_key": "id"
+        },
+        {
+            "table": "action_attack_effect",
+            "primary_key": "id"
+        },
+        {
+            "table": "action_attack_effect2",
+            "primary_key": "id"
+        },
+        {
+            "table": "action_camera",
+            "primary_key": "id"
+        },
+        {
+            "table": "action_displacement",
+            "primary_key": "id"
+        },
+        {
+            "table": "attribute_change",
+            "primary_key": "id"
+        },
+        {
+            "table": "buff_base",
+            "primary_key": "id"
+        },
+        {
+            "table": "buff_rule",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_activity_find",
+            "primary_key": "system_id"
+        },
+        {
+            "table": "config_activity_notice",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_agility_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_auto_bourse",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_banner",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_color",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_common_dialog",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_get_type",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_head",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_lottery",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_operating_activity",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_pvp_ai",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_quality",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_system_times",
+            "primary_key": "id"
+        },
+        {
+            "table": "config_team",
+            "primary_key": "id"
+        },
+        {
+            "table": "detection_third_party",
+            "primary_key": "level"
+        },
+        {
+            "table": "entity_ai",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_attribute",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_effect",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_effect2",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_fight_value",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_goods",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_npc",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_obstacle",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_pet",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_portal",
+            "primary_key": "id"
+        },
+        {
+            "table": "entity_role",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_config_type1",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_config_type2",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_config_type3",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_config_type4",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_extend",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_level",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_progress",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_skill",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_skin",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_artifact_star",
+            "primary_key": "ID"
+        },
+        {
+            "table": "item_artifact_starup",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_base",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_buff",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_competition",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_competition_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_competition_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_crest",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_debris",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_debris_change",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_enchantstone",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_equip_breach",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_equip_common",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_equip_intensify",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_equip_intensify_body",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_equip_intensify_value",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_equip_role_type1",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_equip_role_type2",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_equip_role_type3",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_equip_role_type4",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_fashion_common",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_fashion_role_type1",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_fashion_role_type2",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_fashion_role_type3",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_fashion_role_type4",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_fashion_suit",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_forge",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_gashapon_probability",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_gashapon_reward",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_gashapon_reward_preview",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_gem",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_gem_level",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_gem_levelcost",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_gift_exp",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_make_equip",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_make_equip_suit",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_make_paper",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_material",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_money",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_partner",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_partner_fashion",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_partner_skill",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_partner_star",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_partner_story",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_profile_role1",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_profile_role2",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_profile_role3",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_profile_role4",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_progress_material",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_redpacket",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_refined",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit_awaken",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit_breakthrough",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit_progress",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit_progress_material",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit_star",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit_star_ticket",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit_upstars",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit_upstars_attribute",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_spirit_value",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_sprite_skill",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_sprite_skill_random",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_suit",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_superskill_config_type1",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_superskill_config_type2",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_superskill_config_type3",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_superskill_config_type4",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_title",
+            "primary_key": "id"
+        },
+        {
+            "table": "item_update_material",
+            "primary_key": "material_id"
+        },
+        {
+            "table": "lottery_artifact_area",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_artifact_limit",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_artifact_limit_time",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_artifact_pond",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_artifact_probability",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_equipment_area",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_equipment_pond",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_equipment_probability",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_fashion_area",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_fashion_pond",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_fashion_probability",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_fashion_reward",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_limit_time_points",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_limit_time_rank",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_spirit_area",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_spirit_pond",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_spirit_probability",
+            "primary_key": "id"
+        },
+        {
+            "table": "lottery_spirit_sniper",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_activity_chapter",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_activity_copy",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_camp",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_chapter",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_city",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_copy",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_copy_bestdrop",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_copy_card",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_copy_main",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_copy_main_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_country",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_data",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_province",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_room",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_room2",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_room3",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_stage",
+            "primary_key": "id"
+        },
+        {
+            "table": "map_stage_appraise",
+            "primary_key": "id"
+        },
+        {
+            "table": "name_first",
+            "primary_key": "id"
+        },
+        {
+            "table": "name_man",
+            "primary_key": "id"
+        },
+        {
+            "table": "name_woman",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_7days_activity_award",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_7days_activity_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_7days_sign",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_across_server_arena",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_across_server_arena_award",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_across_server_arena_robot",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_across_server_group",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_atlas",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_dimensiontrial_rewards",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_dimension_trial",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_instance_sign",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_linkage_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_menu",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_sign",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_trial",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_trial_config",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_activity_trial_rewards",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_allstar_rac_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_answer",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_arena",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_arena_award",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_arena_robot",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_artifactway",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_artifact_comboskill",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_artifact_skin",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_auction",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_auction_condition",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_auction_pool",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_awake_road",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_backflow_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_backflow_recharge",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_backflow_sign",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_backflow_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_battlepass_config",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_battlepass_level",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_battlepass_system_level",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_bossrush",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_bossrush_award",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_bossrush_buff",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_boss_skills",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_bourse",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_cashcow",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_chat_expression",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_chat_title",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_coin_tree",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_college_award",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_college_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_commonfunction",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_constellation_buff_base",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_constellation_buff_random",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_constellation_floor",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_constellation_reincarnation",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_constellation_stage",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_dailytask",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_dailytask_config",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_daily_activity",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_daily_liveness_reward",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_daily_liveness_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_daily_reward",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_data_collect",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_dimension_copy",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_dimension_drop",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_dimension_reward",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_dimension_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_drop",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_enemyattack",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_enemyattack_random",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_everyday_online_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_exchange",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_exp",
+            "primary_key": "level"
+        },
+        {
+            "table": "other_expedition",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_formula_config",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_freegifts",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_gashapon",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_gashapon_collect",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_gashapon_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_gemstone_tower",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_get_stronger",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_get_stronger_module",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_get_stronger_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_godchoose_config",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_godchoose_level",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_godchoose_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_growup_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_Infinite",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_Infinite_car",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_Infinite_drop",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_Infinite_fast_drop",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_Infinite_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_Infinite_lv",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_levelreward",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_level_guide",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_level_limit",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_limit",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_limitchallenge_boxlevelup",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_limitchallenge_boxreward",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_limit_exchange",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_limit_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_mail",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_maincitybutton",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_message_push",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_money_tower",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_month_sign",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_nest",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_nest_card",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_openfunction",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_open_server_online_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_open_server_upgrade_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_partner_arms",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_partner_exp",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_powers",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_powers_core",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_pvp_award",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_pvp_config",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_questionnaire",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_ranktitle",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_rapidlychallenge",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_rapidlychallenge_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_resources_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_resource_retrieval",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_resource_stage",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_shop",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_shop_fashionbox",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_shop_goods",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_shop_main",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_shop_shelf",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_shop_skill",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_sound_talk",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_spirit_grade",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_spirit_level",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_story",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_story_data",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_story_set",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_strategy",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_strategy_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_superskill",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_superskill_level",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_superskill_star",
+            "primary_key": "ID"
+        },
+        {
+            "table": "other_superskill_starup",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_superskill_studybuff",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_system_menu",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_system_new_menu",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_tower",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_transfer_data",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_trial",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_trial_rank",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_trial_worldboss",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_vip",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_vip_tip",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_worldboss",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_worldboss_auction",
+            "primary_key": "id"
+        },
+        {
+            "table": "other_worldboss_rank",
+            "primary_key": "id"
+        },
+        {
+            "table": "push_system_massage",
+            "primary_key": "id"
+        },
+        {
+            "table": "pvp_activity_rewards",
+            "primary_key": "id"
+        },
+        {
+            "table": "pvp_ladder_score",
+            "primary_key": "id"
+        },
+        {
+            "table": "pvp_ladder_top_reward",
+            "primary_key": "id"
+        },
+        {
+            "table": "pvp_match_score_plus",
+            "primary_key": "id"
+        },
+        {
+            "table": "pvp_score_steak_coefficient",
+            "primary_key": "id"
+        },
+        {
+            "table": "recharge_accumulative",
+            "primary_key": "id"
+        },
+        {
+            "table": "recharge_card",
+            "primary_key": "id"
+        },
+        {
+            "table": "recharge_daily_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "recharge_everyday",
+            "primary_key": "id"
+        },
+        {
+            "table": "recharge_frist_rewards",
+            "primary_key": "id"
+        },
+        {
+            "table": "recharge_fund",
+            "primary_key": "id"
+        },
+        {
+            "table": "recharge_main",
+            "primary_key": "id"
+        },
+        {
+            "table": "recharge_official_account_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "recharge_rebate",
+            "primary_key": "user_id"
+        },
+        {
+            "table": "recharge_return",
+            "primary_key": "id"
+        },
+        {
+            "table": "res_fashion",
+            "primary_key": "id"
+        },
+        {
+            "table": "res_image",
+            "primary_key": "id"
+        },
+        {
+            "table": "res_sound",
+            "primary_key": "id"
+        },
+        {
+            "table": "res_spine",
+            "primary_key": "id"
+        },
+        {
+            "table": "res_video",
+            "primary_key": "id"
+        },
+        {
+            "table": "server_enterkey",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_ai",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_attack",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_attribute_damage",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_change_system",
+            "primary_key": "skill_id"
+        },
+        {
+            "table": "skill_chip",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_hit",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_hurt",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_leaf",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_recommend",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_rock",
+            "primary_key": "id"
+        },
+        {
+            "table": "skill_tree",
+            "primary_key": "id"
+        },
+        {
+            "table": "sound_map_spine",
+            "primary_key": "id"
+        },
+        {
+            "table": "sound_sendmessage",
+            "primary_key": "sendmessage_id"
+        },
+        {
+            "table": "sound_spine",
+            "primary_key": "spine_id"
+        },
+        {
+            "table": "sound_spine_bgm",
+            "primary_key": "spine_id"
+        },
+        {
+            "table": "sound_ui",
+            "primary_key": "view_name"
+        },
+        {
+            "table": "specialability_base",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_announcement",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_answer",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_content",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_error",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_fighttips",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_help",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_mail",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_name",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_sound_talk",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_story",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_tutor",
+            "primary_key": "id"
+        },
+        {
+            "table": "text_ui",
+            "primary_key": "id"
+        },
+        {
+            "table": "tutor_func_priority",
+            "primary_key": "id"
+        },
+        {
+            "table": "tutor_process",
+            "primary_key": "id"
+        },
+        {
+            "table": "tutor_tips",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_achievement_redpacket",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_activity",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_activity_rank",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_base",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_boss_chapter",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_boss_stage",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_citywar",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_competition",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_competition_city",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_competition_coordinate",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_competition_formula",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_competition_merit",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_competition_show",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_crystal",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_crystal_other",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_goalkeeper",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_goalkeeper_rank",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_positon",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_salary",
+            "primary_key": "union_lv"
+        },
+        {
+            "table": "union_salary_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_sign",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_sign_gift",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_sign_redpacket",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_skill",
+            "primary_key": "id"
+        },
+        {
+            "table": "union_task",
+            "primary_key": "id"
+        },
+        {
+            "table": "world_config",
+            "primary_key": "id"
+        },
+        {
+            "table": "world_lv_gift",
+            "primary_key": "id"
+        }
+    ]
+}

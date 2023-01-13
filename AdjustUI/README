@@ -1,0 +1,5 @@
+完全使用 CMake 来构建项目
+
+使用 vs 2022 编译工程
+
+使用 git submodule 引入依赖
