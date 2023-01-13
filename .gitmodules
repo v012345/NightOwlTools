@@ -7,3 +7,6 @@
 [submodule "AdjustUI/audit_tables_v2/scripts"]
 	path = AdjustUI/audit_tables_v2/scripts
 	url = git@github.com:v012345/audit_workers.git
+[submodule "AdjustUI/pugixml"]
+	path = AdjustUI/pugixml
+	url = git@github.com:zeux/pugixml.git
